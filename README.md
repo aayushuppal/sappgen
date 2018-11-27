@@ -1,3 +1,6 @@
+[![GitHub contributors](https://img.shields.io/github/contributors/aayushuppal/sappgen.svg)](https://github.com/aayushuppal/sappgen/graphs/contributors)
+[![Build Status](https://travis-ci.org/aayushuppal/sappgen.svg?branch=master)](https://travis-ci.org/aayushuppal/sappgen)
+
 # SAPPGEN
 
 Simple App Generator for Python
