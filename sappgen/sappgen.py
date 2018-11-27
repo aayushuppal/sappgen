@@ -1,4 +1,4 @@
-"""Simple App Generator
+"""Simple App Generator - Python
 
 Usage:
 ------

@@ -1,6 +1,7 @@
 import logging
-from sappgen import process
+import os
 from sappgen.templates import Template1
+from sappgen.util import cleanup
 
 # ==================================================================================================
 
@@ -9,7 +10,42 @@ logging.getLogger().setLevel("DEBUG")
 # ==================================================================================================
 
 
-def test_main():
+""" Template - 1
+proj1
+├── Makefile
+├── app1
+│   ├── cfg
+│   │   ├── config.py
+│   │   └── __init__.py
+│   ├── __init__.py
+│   ├── main.py
+│   └── util
+│       ├── __init__.py
+│       └── log_util.py
+└── tests
+    └── test_app1.py
+
+4 directories, 8 files
+"""
+def test_template1_struct():
     logging.debug("testing main")
-    # capture 'tree' output in a string and compare it for testing the structure
-    assert 1 == 1
+
+    tmpl = Template1("proj1", "app1")
+    tmpl.process()
+
+    assert os.path.isfile("./proj1/Makefile") == True
+
+    assert os.path.isfile("./proj1/app1/__init__.py") == True
+    assert os.path.isfile("./proj1/app1/main.py") == True
+
+    assert os.path.isfile("./proj1/app1/cfg/__init__.py") == True
+    assert os.path.isfile("./proj1/app1/cfg/config.py") == True
+
+    assert os.path.isfile("./proj1/app1/util/__init__.py") == True
+    assert os.path.isfile("./proj1/app1/util/log_util.py") == True
+
+    assert os.path.isfile("./proj1/tests/test_app1.py") == True
+
+    cleanup(project_name="proj1")
+
+    assert os.path.isdir("./proj1") == False
