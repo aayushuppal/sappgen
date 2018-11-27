@@ -7,13 +7,15 @@ project
 │   │   └── __init__.py
 │   ├── __init__.py
 │   ├── main.py
+├── README.md
+├── requirements-dev.txt
 │   └── util
 │       ├── __init__.py
 │       └── log_util.py
 └── tests
     └── test_testapp.py
 
-4 directories, 8 files
+4 directories, 10 files
 """
 
 import os
@@ -44,6 +46,8 @@ class Template1:
         os.system(f"mkdir -p {self.project_name}/tests")
 
         os.system(f"touch {self.project_name}/Makefile")
+        os.system(f"touch {self.project_name}/README.md")
+        os.system(f"touch {self.project_name}/requirements-dev.txt")
         os.system(f"touch {self.project_name}/{self.app_name}/__init__.py")
         os.system(f"touch {self.project_name}/{self.app_name}/main.py")
         os.system(f"touch {self.project_name}/{self.app_name}/cfg/__init__.py")
@@ -61,8 +65,20 @@ class Template1:
         process_template(
             self.project_name,
             self.app_name,
+            f"{Template1.TEMPLATE_PROJ_PATH}/README.md.template",
+            f"{dest_proj_path}/README.md",
+        )
+        process_template(
+            self.project_name,
+            self.app_name,
             f"{Template1.TEMPLATE_PROJ_PATH}/Makefile.template",
             f"{dest_proj_path}/Makefile",
+        )
+        process_template(
+            self.project_name,
+            self.app_name,
+            f"{Template1.TEMPLATE_PROJ_PATH}/requirements-dev.txt.template",
+            f"{dest_proj_path}/requirements-dev.txt",
         )
 
         process_template(

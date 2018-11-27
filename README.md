@@ -8,11 +8,33 @@ Simple App Generator for Python
 Python `3.7`
 
 ## Usage:
+
     $ sappgen [options] <project_name> <app_name>
     $ sappgen proj app
 
 ## Available options are:
+
     -h, --help         Show help
+
+## Template 1 - App structure
+
+    project
+    ├── Makefile
+    ├── testapp
+    │   ├── cfg
+    │   │   ├── config.py
+    │   │   └── __init__.py
+    │   ├── __init__.py
+    │   ├── main.py
+    ├── README.md
+    ├── requirements-dev.txt
+    │   └── util
+    │       ├── __init__.py
+    │       └── log_util.py
+    └── tests
+        └── test_testapp.py
+
+    4 directories, 10 files
 
 ## Contact
 
