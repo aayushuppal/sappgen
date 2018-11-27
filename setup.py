@@ -1,4 +1,4 @@
-"""sappgen"""
+"""Setup script for sappgen"""
 
 import os.path
 from setuptools import setup, find_packages
