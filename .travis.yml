@@ -6,6 +6,9 @@ matrix:
       dist: xenial
       sudo: true
 
+before_install:
+  - sudo apt-get install tree
+  
 install:
   - pip install -e .
   - pip install -r requirements-dev.txt
