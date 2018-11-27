@@ -6,9 +6,15 @@
 
 # SAPPGEN
 
-Simple App Generator for Python
+Simple App Generator for Python - Command line utility
 
 Python `3.7`
+
+## Installation
+
+- Install from [PyPi](https://pypi.org/project/sappgen)
+
+`pip install sappgen`
 
 ## Usage:
 
