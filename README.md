@@ -19,7 +19,7 @@ Python `3.7`
 
     -h, --help         Show help
 
-## Template 1 - App structure
+## Default App Template: Template 1 - App structure
 
     project
     ├── Makefile
