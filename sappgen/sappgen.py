@@ -17,10 +17,6 @@ Contact:
 More information is available at:
 - https://pypi.org/project/sappgen
 - https://github.com/aayushuppal/sappgen
-
-Version:
---------
-- sappgen v1.0.0
 """
 
 import logging
