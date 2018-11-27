@@ -5,6 +5,7 @@
 
 Simple App Generator for Python
 
+Python `3.7`
 
 ## Usage:
     $ sappgen [options] <project_name> <app_name>
