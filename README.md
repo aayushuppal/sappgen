@@ -25,6 +25,7 @@ Python `3.7`
 ## Available options are:
 
     -h, --help         Show help
+    -v, --version      Show package version
 
 ## Default App Template: Template 1 - App structure
 

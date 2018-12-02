@@ -9,6 +9,7 @@ Create an app:
 
 Available options are:
     -h, --help         Show this help
+    -v, --version      Show package version
 
 Contact:
 --------
@@ -25,6 +26,7 @@ import sys
 from .cfg import LOG_LEVEL
 from .util import set_root_logger_stdout, cleanup
 from .templates import Template1
+from . import __version__ as version
 
 
 set_root_logger_stdout(LOG_LEVEL)
@@ -56,6 +58,11 @@ def main():
 
     if "-h" in opts or "--help" in opts:
         print(__doc__)
+        print(f"version: {version}")
+        return
+
+    if "-v" in opts or "--version" in opts:
+        print(f"version: {version}")
         return
 
     if len(args) == 2:
@@ -64,4 +71,5 @@ def main():
         process(project=project_name, app=app_name)
     else:
         print(__doc__)
+        print(f"version: {version}")
         return
