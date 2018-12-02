@@ -1,12 +1,13 @@
 import logging
-from $APP_NAME import app
+from $APP_NAME import process_app
+from $APP_NAME.util import set_root_logger
 
 # ==================================================================================================
 
-logging.getLogger().setLevel("DEBUG")
+set_root_logger("DEBUG")
 
 # ==================================================================================================
 
 def test_$APP_NAME():
     logging.debug("testing main app")
-    assert app(a=1) == 1
+    assert process_app(val=1) == 1

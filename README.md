@@ -27,23 +27,22 @@ Python `3.7`
 
 ## Default App Template: Template 1 - App structure
 
-    project
-    ├── Makefile
-    ├── testapp
-    │   ├── cfg
-    │   │   ├── config.py
-    │   │   └── __init__.py
-    │   ├── __init__.py
-    │   ├── main.py
-    ├── README.md
-    ├── requirements-dev.txt
+    proj1
+    ├── app1
     │   └── util
-    │       ├── __init__.py
-    │       └── log_util.py
-    └── tests
-        └── test_testapp.py
-
-    4 directories, 10 files
+    │   │   ├── __init__.py
+    │   │   └── log_util.py
+    │   │── __init__.py
+    │   └── app.py
+    ├── config.ini
+    ├── main.py
+    │
+    ├── tests
+    |   └── test_app1.py
+    │
+    ├── Makefile
+    ├── README.md
+    └── requirements-dev.txt
 
 ## Contact
 
