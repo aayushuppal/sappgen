@@ -9,6 +9,8 @@
 
 Simple App Generator for Python - Command line utility
 
+Well structured code skeleton for python code and applications with pytest
+
 Python `3.7`
 
 ## Installation
