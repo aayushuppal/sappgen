@@ -11,6 +11,8 @@ Simple App Generator for Python - Command line utility
 
 Well structured code skeleton for python code and applications with pytest
 
+Standardizing general scripting, bots and applications etc. for maintainability and testing
+
 Python `3.7`
 
 ## Installation
