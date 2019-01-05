@@ -4,12 +4,19 @@ Usage:
 ------
     $ sappgen [options] <project_name> <app_name>
 
-Create an app:
+Create an app -  template1:
     $ sappgen proj app
+    OR
+    $ sappgen -t1 proj app
+
+Create an app -  template2 - wsgi server app:
+    $ sappgen -t2 proj app
 
 Available options are:
     -h, --help         Show this help
     -v, --version      Show package version
+    -t1, --template1   Generate application - template 1
+    -t2, --template2   Generate wsgi application - template 2
 
 Contact:
 --------
@@ -96,5 +103,8 @@ def main():
     if "-t2" in opts or "--template2" in opts:
         processT2(project=project_name, app=app_name)
         return
-
-    process(project=project_name, app=app_name)
+    elif "-t1" in opts or "--template1" in opts or len(opts) == 0:
+        process(project=project_name, app=app_name)
+    else:
+        print(__doc__)
+        print(f"version: {version}")
