@@ -10,7 +10,7 @@ with open(os.path.join(HERE, "README.md")) as fid:
 
 setup(
     name="sappgen",
-    version="1.0.7",
+    version="1.0.8",
     description="Simple App Generator - Python",
     long_description=README,
     long_description_content_type="text/markdown",
