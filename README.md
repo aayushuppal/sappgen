@@ -7,7 +7,7 @@
 
 # SAPPGEN
 
-Simple App Generator for Python - Command line utility
+Simple App / WSGI Server App - Generator for Python - Command line utility
 
 Well structured code skeleton for python code and applications with pytest
 
