@@ -6,6 +6,6 @@ See https://github.com/aayushuppal/sappgen for more information
 """
 
 # Version of sappgen package
-__version__ = "1.0.6"
+__version__ = "1.0.7"
 
 from .sappgen import process, main
