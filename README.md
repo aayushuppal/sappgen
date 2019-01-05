@@ -11,13 +11,13 @@ Simple App / WSGI Server App - Generator for Python - Command line utility
 
 Well structured code skeleton for python code and applications with pytest
 
-Template 1
+> Template 1
 
-Standardizing general scripting, bots, applications etc. for maintainability and testing
+> Standardizing general scripting, bots, applications etc. for maintainability and testing
 
-Template 2
+> Template 2
 
-WSGI REST backend server application with flask - gunicorn
+> WSGI REST backend server application with flask - gunicorn
 
 Python `3.7`
 
